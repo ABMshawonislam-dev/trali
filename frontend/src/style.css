@@ -116,3 +116,53 @@
     transform: scale(1.2);
 
 }
+
+
+.rs-grid-container {
+    width: 1434px;
+}
+
+.deal-part{
+    margin-top: 100px;
+}
+
+.dealbox{
+    padding: 142px 52px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.deal-part h5{
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #05297F;
+    text-decoration: underline;
+}
+
+.deal-part h2{
+    font-family: 'Hind', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #252525;
+    line-height: 42px;
+    width: 242px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.deal-part button{
+    background: #FC9D9D;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-family: 'Hind', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.deal-part .dealbtn1{
+    background: #05297F;
+}
+

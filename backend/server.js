@@ -1,6 +1,8 @@
 const express = require('express')
 const bannerData = require('./bannerData')
 const logoData = require('./logoData')
+const dealData = require('./dealData')
+
 var cors = require('cors')
 const app = express()
 
@@ -17,6 +19,10 @@ app.get("/logo",function(req,res){
 
 app.get("/banner",function(req,res){
     res.send(bannerData)
+})
+
+app.get("/deal",function(req,res){
+    res.send(dealData)
 })
 
 app.listen(8000,()=>{
