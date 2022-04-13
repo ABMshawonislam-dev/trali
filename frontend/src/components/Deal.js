@@ -7,16 +7,18 @@ const Deal = () => {
     let [deal,setDeal] = useState([])
 
 
-    useEffect(async ()=>{
-        let data = await axios.get("http://localhost:8000/deal")
-
-        setDeal(data.data)
+    useEffect( ()=>{
+       async function deal(){
+          let data = await axios.get("http://localhost:8000/deal")
+          setDeal(data.data)
+       }
+       deal()
     },[])
 
   return (
     <Container className='container deal-part'>
         <Grid>
-             <Row className="show-grid" gutter={24}>
+             <Row className="show-grid" gutter={30}>
                  {deal.map((item,index)=>(
                     <Col xs={12}>
                         <div className='dealbox ' style={{backgroundImage: `url(${item.img})`}}>

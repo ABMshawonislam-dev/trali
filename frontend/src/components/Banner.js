@@ -6,10 +6,13 @@ import { Container  } from 'rsuite';
 const Banner = () => {
      let [banner,setBanner] = useState([]) 
 
-  useEffect(async()=>{
-    let data = await axios.get("http://localhost:8000/banner")
-    
-    setBanner(data.data)
+  useEffect(()=>{
+     async function banner(){
+          let data = await axios.get("http://localhost:8000/banner")
+     
+          setBanner(data.data)
+      }
+    banner()
     
   },[])
   return (
