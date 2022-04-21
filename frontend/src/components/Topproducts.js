@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useEffect,useState } from 'react'
+import axios from 'axios'
 import {Container,Grid,Row,Col } from 'rsuite';
 import Product from './Product';
 const Topproducts = () => {
+
+    let [products,setProducts] = useState([])
+
+    useEffect(()=>{
+        async function fetchProduct(){
+            let {data} = await axios.get("http://localhost:8000/products")
+            setProducts(data)
+
+        }
+
+        fetchProduct()
+    },[])
   return (
     <Container className='container topproduct'>
 
@@ -23,18 +36,13 @@ const Topproducts = () => {
 
         <Grid>  
             <Row className="show-grid" gutter={30}>
-                <Col xs={6}>
-                    <Product/>
-                </Col>
-                <Col xs={6}>
-                <Product/>
-                </Col>
-                <Col xs={6}>
-                <Product/>
-                </Col>
-                <Col xs={6}>
-                <Product/>
-                </Col>
+                {products.map(item=>(
+
+                    <Col xs={6}>
+                        <Product img={item.image} heading={item.name}/>
+                    </Col>
+                ))}
+              
                 
             </Row>
         </Grid>

@@ -218,3 +218,28 @@
     border-radius: 5px;
 }
 
+.topproduct .rs-rate-md .rs-rate-character {
+    width: auto;
+}
+
+.topproduct .rs-panel-header {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.topproduct .rs-panel-header+.rs-panel-body, .rs-panel-header+.rs-panel-collapse .rs-panel-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.topproduct .rs-rate li {
+    margin-right: 25px;
+    margin-left: 0;
+    font-size: 16px;
+    color: #FFBD69;
+}
+/* 
+.rs-rate-character-after, .rs-rate-character-before {
+    color: transparent;
+} */
+
