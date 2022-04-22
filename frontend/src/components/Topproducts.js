@@ -39,7 +39,7 @@ const Topproducts = () => {
                 {products.map(item=>(
 
                     <Col xs={6}>
-                        <Product img={item.image} heading={item.name}/>
+                        <Product img={item.image} heading={item.name} rating={item.rating} brand={item.brand} color={item.colors} size={item.sizes} price={item.price}/>
                     </Col>
                 ))}
               

@@ -243,3 +243,78 @@
     color: transparent;
 } */
 
+.singleproduct{
+    margin-top: 40px;
+}
+
+.productbox{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.productbox .brand p{
+    margin-top: 28px;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #B1B1B1;
+}
+
+.staricon{
+    color: #FFBD69;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-top: 28px;
+}
+
+.productColor{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 13px;
+    border-radius: 50%;
+}
+
+.productsize span{
+    display: inline-block;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #252525;
+    margin-left: 11px;
+
+}
+
+.cart{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: #FC9D9D;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    margin-top: 22px;
+}
+
+.cart .productcart{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.price{
+    display: inline-block;
+    font-family: 'Hind', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #303960;
+    position: relative;
+    top: -13px;
+    left: 10px;
+}
+
+
