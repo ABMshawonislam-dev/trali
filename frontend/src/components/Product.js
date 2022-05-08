@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Panel} from 'rsuite'
 import {BsStarFill,BsStar,BsStarHalf,BsBag } from 'react-icons/bs';
 
 const Product = (props) => {
+
+  const [activeColor,setActivecolor] = useState("")
+  const [activeSize,setActivesize] = useState("")
+
   return (
     <div className='singleproduct'>
       <Panel  bodyFill style={{ display: 'inline-block', width: "100%" }}>
@@ -20,20 +24,17 @@ const Product = (props) => {
          </div>
        </div>
         
-        
-        {/* <BsStarFill className='staricon'/>
-        <BsStar className='staricon' />
-        <BsStarHalf className='staricon' /> */}
+       
         <Panel header={props.heading}>
         <div className="productbox">
          <div className="productcolorbox">
             {props.color.map(item=>(
-              <span className='productColor' style={{background: `#${item}`}}></span>
+              <span className={activeColor == item?'productColor activeColor':'productColor'} style={{background: `#${item}`}} onClick={()=>setActivecolor(item)}></span>
             ))}
          </div>
          <div className="productsize">
            {props.size.map(item=>(
-              <span>{item}</span>
+              <span className={activeSize == item?'productSize productActiveSize':'productSize'} onClick={()=>setActivesize(item)}>{item}</span>
             ))}
          </div>
        </div>
