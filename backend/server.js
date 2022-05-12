@@ -3,6 +3,7 @@ const bannerData = require('./bannerData')
 const logoData = require('./logoData')
 const dealData = require('./dealData')
 const productData = require('./productData')
+const featureData = require('./featureCat')
 
 var cors = require('cors')
 const app = express()
@@ -28,6 +29,10 @@ app.get("/deal",function(req,res){
 
 app.get("/products",function(req,res){
     res.send(productData)
+})
+
+app.get("/feature",function(req,res){
+    res.send(featureData)
 })
 
 app.listen(8000,()=>{

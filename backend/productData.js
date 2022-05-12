@@ -6,7 +6,8 @@ let productData = [
         brand: "Zara",
         colors: ["622060","1473A9","FBDADA","519D04"],
         sizes: ["xs","s","m"],
-        price: 145
+        price: 145,
+        feature: true
 
     },
     {
@@ -16,7 +17,8 @@ let productData = [
         brand: "Zara",
         colors: ["622060","1473A9","FBDADA","519D04"],
         sizes: ["xs","s","m"],
-        price: 145
+        price: 145,
+        feature: true
 
     },
     {
@@ -26,7 +28,8 @@ let productData = [
         brand: "Zara",
         colors: ["622060","1473A9","FBDADA","519D04"],
         sizes: ["xs","s","m"],
-        price: 145
+        price: 145,
+        feature: true
 
     },
     {
@@ -36,7 +39,8 @@ let productData = [
         brand: "Zara",
         colors: ["622060","1473A9","FBDADA","519D04"],
         sizes: ["xs","s","m"],
-        price: 145
+        price: 145,
+        feature: true
 
     },
     {
@@ -46,7 +50,8 @@ let productData = [
         brand: "Zara",
         colors: ["622060","1473A9","FBDADA","519D04"],
         sizes: ["xs","s","m"],
-        price: 145
+        price: 145,
+        feature: false
 
     },
     {
@@ -56,7 +61,8 @@ let productData = [
         brand: "Zara",
         colors: ["622060","1473A9","FBDADA","519D04"],
         sizes: ["xs","s","m"],
-        price: 145
+        price: 145,
+        feature: false
 
     },
     {
@@ -66,7 +72,8 @@ let productData = [
         brand: "Zara",
         colors: ["622060","1473A9","FBDADA","519D04"],
         sizes: ["xs","s","m"],
-        price: 145
+        price: 145,
+        feature: false
 
     },
     {
@@ -76,7 +83,8 @@ let productData = [
         brand: "Zara",
         colors: ["622060","1473A9","FBDADA","519D04"],
         sizes: ["xs","s","m"],
-        price: 145
+        price: 145,
+        feature: false
 
     },
 ]
